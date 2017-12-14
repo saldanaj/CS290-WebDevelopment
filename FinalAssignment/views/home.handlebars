@@ -1,0 +1,31 @@
+<h3>Workout Tracker</h3>
+
+
+<fieldset>
+<legend>Workout Form / Submit New Workout</legend>
+  <form method ="POST">
+
+    <label for="workoutName">Name</label>
+    <input id="workoutName" type="text" name="name" placeholder="*Required*">
+
+    <label for="workoutReps">Reps</label>
+    <input id="workoutReps" type="text" name="reps">
+
+    <label for="workoutWeight">Weight</label>
+    <input id="workoutWeight" type="text" name="weight">
+
+    <label for="workoutDate">Date</label>
+    <input id="workoutDate" type="date" name="date">
+
+    <label for="unitCheckBox">LBS (Check for KGS)</label>
+    <input id="unitCheckBox" type="checkbox" name="lbs" value="true">
+    <br/>
+    <input id="add" type="submit" name="add" value="Add New WorkOut">
+  
+  </form>
+</fieldset>
+
+<br>
+
+<script src="/js/rows.js"></script>
+<script src="/js/table.js"></script>

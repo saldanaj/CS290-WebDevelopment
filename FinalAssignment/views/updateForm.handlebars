@@ -1,0 +1,28 @@
+<h3>Workout Tracker</h3>
+
+<fieldset>
+<legend>Update Workout Form</legend>
+<form method ="POST">
+
+  <label for="workoutName">Name</label>
+  <input id="workoutName" type="text" name="name" value="{{results.[0].name}}" placeholder="*Required*">
+
+  <label for="workoutReps">Reps</label>
+  <input id="workoutReps" type="text" name="reps" value={{results.[0].reps}}>
+
+  <label for="workoutWeight">Weight</label>
+  <input id="workoutWeight" type="text" name="weight" value={{results.[0].weight}}>
+
+  <label for="workoutDate">Date</label>
+  <input id="workoutDate" type="date" name="date" value={{results.[0].date}}>
+
+  <label for="unitCheckBox">lbs? (Leave unchecked for kg)</label>
+  <input id="unitCheckBox" type="checkbox" name="lbs" value="{{results.[0].lbs}}" {{checked}}>
+
+  <br/>
+
+  <input type="hidden" name="id" value={{results.[0].id}}>
+  <input id="add" type="submit" name="add" value="Update Excercise">
+
+</form>
+</fieldset>
