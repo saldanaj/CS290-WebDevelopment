@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+Student: Joaquin Saldana 
+Class: CS290 - Web Development 
+Activity: AJAX Interactins 
+
+Description: HTML file for the activity required for week 6.  In this 
+file we append to it the js file that will submit a post asynchronously 
+to the Open Weather Map API 
+
+The 2nd section of the HTML involves a asynchronous post to 
+HTTPBIN.org, the HTML code collects and shows the user enters 
+the first name and last name.  
+-->
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>saldanaj AJAX Activity</title>
+    <script src=saldanaj_AJAXInteractionsWeek6JSFile.js></script>
+  </head>
+  <body>
+    <h1> Weather Information </h1>
+    <p>In order to get the weather, please enter the zip or city name below ... </p>
+
+     <form>
+      <fieldset>
+        <legend>Retrieve Weather</legend>
+        <label for="ZipCode">Zip Code: </label>
+        <input type="text" name="ZipCode" id="ZipCode">
+      <br/>
+        <label for="CityName">City Name: </label>
+        <input type="text" name="CityName" id="CityName">
+        <input type="submit" id="submitWeather">   
+      </fieldset>
+     </form>
+    <h2>Weather Results:</h2>
+    <div> 
+      <ul>
+        <li><span>City: </span><span id="City"></span></li>
+        <li><span>Current Temperature: </span><span id="Temperature"></span></li>
+        <li><span>Humidity: </span><span id="Humidity"></span></li>
+      </ul>
+    </div>
+    
+    <div>
+    </div>
+    
+    <h1>Posting to HTTPBIN.ORG</h1>
+    <p>Enter your first and last name so we can "Post" it to the HTTPBIN.org </p>
+    <form>
+    <fieldset>
+      <legend>Enter your first and last name.</legend>
+      <label for="firstName">First name: </label>
+      <input type="text" name="firstName" id="firstName">
+
+      <label for="lastName">Last name: </label>
+      <input type="text" name="lastName" id="lastName">
+
+      <input type="submit" id="submitPost">
+    </fieldset>
+    </form>
+    <h2>HTTPBIN Post Results:</h2>
+    <div> 
+        <span>Response: </span><span id="binPostContent"></span>    
+    </div>
+  </body>
+</html>
