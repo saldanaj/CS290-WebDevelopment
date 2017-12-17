@@ -1,0 +1,57 @@
+/* 
+Student: Joaquin Saldana 
+Course: CS290_400 / Web Development 
+Assignment: HTML/CSS 
+Due Date: 01/22/2017 
+
+Description: this is the CSS sheet for assignment 2 of the course.  In this 
+assignment we will be creating a table, a list, and two forms (a GET and POST 
+form).  This sheet will help format the HTML document titled content.html
+*/
+
+table, td, th{
+    border-style: ridge; 
+}
+
+.first_column{
+    font-weight: normal; 
+    font-style: italic; 
+}
+
+ul {
+  list-style-type: none;
+}
+
+.outer-content{
+    background-color: pink;
+    width: 75%; 
+    margin-top: 20px; 
+    padding: 20px 
+}
+
+.inner-content {
+    background-color: blue; 
+    width: 75% ; 
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+tbody td:first-child {
+  font-style: italic;
+}
+
+tbody td:nth-child(2) {
+  color: red;
+}
+
+tbody td:nth-child(4) {
+  color: blue;
+}
+
+tbody tr:nth-of-type(odd) {
+   background-color: lightgreen;
+}
+
+tbody tr:nth-of-type(even) {
+   background-color: lightblue;
+}

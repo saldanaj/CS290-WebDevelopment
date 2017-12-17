@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+Student: Joaquin Saldana 
+Course: CS290_400 / Web Development 
+Assignment: HTML/CSS 
+Due Date: 01/22/2017 
+
+Description: this is the HTML document for assignment 2 of the course.  In this 
+assignment we will be creating a table, a list, and two forms (a GET and POST 
+form).  
+-->
+
+<!-- insert comment -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Joaquin Saldana Assignment 2</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  </head>
+  <body>
+      <table>
+       <caption>Who wins? Cell content indicates the status of the row entry</caption>
+       <thead>
+        <tr>
+            <th>
+            <th> Godzilla 
+            <th> Batman 
+            <th> Shaq 
+            <th> Aaron  Carter 
+            <th> Abe Lincoln 
+       <tbody>
+        <tr>
+            <th class="first_column"> Godzilla 
+            <td> N/A 
+            <td> Minor Loss
+            <td> Loss 
+            <td> Unknown
+            <td> Unknown    
+        <tr>
+            <th class="first_column"> Batman 
+            <td> Minor Win
+            <td> N/A
+            <td> Total Victory  
+            <td> Total Victory 
+            <td> Total Loss   
+        <tr>
+            <th class="first_column"> Shaq 
+            <td> Win
+            <td> Total Loss 
+            <td> N/A  
+            <td> Minor Loss  
+            <td> Unknown 
+        <tr>
+            <th class="first_column"> Aaron Carter 
+            <td> Unknown 
+            <td> Total Loss 
+            <td> Minor Win   
+            <td> N/A 
+            <td> Unknown 
+        <tr>
+            <th class="first_column"> Abe Lincoln  
+            <td> Unknown 
+            <td> Total Victory 
+            <td> Unknown  
+            <td> Unknown 
+            <td> N/A
+       <tfoot>
+            <td colspan="2"> Footer 1 
+            <td colspan="4"> Footer 2
+       </tfoot>
+      </table>
+      <ul>
+        <li>Best Programming Languages</li>
+        <li><ul>
+                <li>C Language</li>
+            </ul>
+        <li>Second Best Programming Language</li>
+                <li><ul>
+                <li>Java</li>
+            </ul>
+        <li>This Best Programming Language</li>
+                <li><ul>
+                <li>JavaScript</li>
+            </ul>
+      </ul>
+      <div class="outer-content">
+          <div class="inner-content">Here is some context</div>
+      </div>
+      <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+        <fieldset>
+            <legend>Some Get Data:</legend>
+            <br/>
+            <fieldset>
+            <label>Text here:
+                <input type="text" name="text_input" size="30" maxlength="30">
+            </label>
+            </fieldset>
+            <p>
+            <fieldset>
+            <label>Number Here:
+                <input type="number" name="numerical_input" size="30" maxlength="60">
+            </label>
+            </fieldset>
+            <p>
+            <fieldset>
+            <label>Password here:
+                <input type="password" name="password_input" size="30" maxlength="30">
+            </label>
+            </fieldset>
+            <p>
+            <fieldset>
+            <p>Select between: 
+            <p>
+            <label>
+                <input type="radio" name="candy" value="Snickers" />Snickers
+            </label>
+            <p>
+            <label>
+                <input type="radio" name="candy" value="Skittles" />Skittles 
+            </label>
+            <p>
+            <label>
+                <input type="radio" name="candy" value="Mentos" />Mentos 
+            </label>
+            <p>
+            <input type="submit" value="Submit">
+            </fieldset>
+            <br/>
+        </fieldset>
+      </form>
+      <p>
+      <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+        <fieldset>
+            <legend>Some Post Data:</legend>
+            <br/>
+            <fieldset>
+            <label>Text here:
+                <input type="text" name="text_input" size="30" maxlength="30">
+            </label>
+            </fieldset>
+            <p>
+            <fieldset>
+            <label>Number Here:
+                <input type="number" name="numerical_input" size="30" maxlength="60">
+            </label>
+            </fieldset>
+            <p>
+            <fieldset>
+            <label>Password here:
+                <input type="password" name="password_input" size="30" maxlength="30">
+            </label>
+            </fieldset>
+            <p>
+            <fieldset>
+            <p>Select between: 
+            <p>
+            <label>
+                <input type="radio" name="candy" value="Snickers" />Snickers
+            </label>
+            <p>
+            <label>
+                <input type="radio" name="candy" value="Skittles" />Skittles 
+            </label>
+            <p>
+            <label>
+                <input type="radio" name="candy" value="Mentos" />Mentos 
+            </label>
+            <p>
+            <input type="submit" value="Submit">
+            </fieldset>
+            <br/>
+        </fieldset>
+      </form>
+  </body>
+</html>
