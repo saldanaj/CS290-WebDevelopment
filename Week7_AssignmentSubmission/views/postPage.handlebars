@@ -1,0 +1,27 @@
+
+<!-- 
+Student: Joaquin Saldana 
+Assignment: Get/Post Checker 
+Week 7 
+Description: this is the get page that displays in 
+HTML the get post URL query data 
+ -->
+
+
+<h1>{{contentType}} Request Receieved</h1>
+
+<div> Values sent via query string:
+<ul>
+  {{#each reqList}}
+    <li> {{this.name}}: {{this.value}}
+  {{/each}}
+</ul>
+</div>
+
+<div> Values sent via the body (POST ONLY):
+  <ul>
+    {{#each reqBody}}
+      <li> {{this.name}}: {{this.value}}
+    {{/each}}
+  </ul>
+</div>
